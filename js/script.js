@@ -142,3 +142,13 @@ $(document).ready(function() {
         $("#grandTotal").html("Grand Total Cost: " + finalTotal);
 
     });
+    $("#deliveryPointForm").submit(function(event) {
+        event.preventDefault();
+
+        deliveryPoint = $("#deliveryPoint").val();
+        if (deliveryPoint == 1) {
+            $("#remoteLocation").show();
+
+        };
+
+    });
