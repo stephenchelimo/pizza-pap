@@ -152,3 +152,15 @@ $(document).ready(function() {
         };
 
     });
+    $("#submitLocaton").submit(function(event) {
+        event.preventDefault();
+        var remoteClientName = $("#userName").val();
+        var remoteClientAddress = $("#userAddress").val();
+        var remoteClientPhoneNumber = $("#userTelNum").val();
+
+        $("#remoteThankYou").html("Thankyou " + remoteClientName + " for odering with us! Your order will be delivered to your location, " + remoteClientAddress + ".");
+
+    });
+
+
+});
