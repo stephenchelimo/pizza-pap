@@ -66,12 +66,12 @@
                 <h2>Happy to have you! make your order.</h2>
             </div>
             <div class="order-form col-lg-5">
-                <form id="order-Pizza">
+              <form id="order-Pizza">
                   
                     <label for="Pizza-Sizes">Pizza Size</label>
                     <select id="pizzaSize" class="form-control" required>
                   <option value="">Select Size</option>
-                  <option value="Extra Large">Extra Large, 900/-</option> <!-- consider adding an image to these opitons -->
+                  <option value="Extra Large">Extra Large, 900/-</option> 
                   <option value="Large">Large, 700/-</option>
                   <option value="Medium">Medium, 500/-</option>
                   <option value="Small">Small, 300/-</option>
@@ -85,25 +85,29 @@
                 </select><br>
 
                     <label for="Toppings">Toppings</label>
-                    <select id="toppings" class="form-control" required>
+                <select id="toppings" class="form-control" required>
                   <option value="">Select Toppings</option>
                   <option value="BBQ-Chicken">BBQ-Chicken, 300/-</option>
                   <option value="Meat Deluxe">Meat Deluxe, 200/-</option>
                   <option value="Margherita">Margherita, 250/-</option>
                 </select><br>
 
-                    <label for="Extra Toppings">Extra Toppings</label>
-                    <select id="extraToppings" class="form-control" required>
+                <label for="Extra Toppings">Extra Toppings</label>
+                <select id="extraToppings" class="form-control" required>
                   <option value="">Select Extra Toppings</option>
                   <option value="Surprise Me">Surprise Me!-</option>
                   <option value="Familiar">Familiar (no-extra-topping), free</option>
                 </select><br>
 
-                 <div>
+                <div>
                     <label for="Number of Oders"> Number of Oders</label>
-                        <input id="numberOfOrders" class="form-control" name="Number-of-Oders" type="number" min="1" required><br>
+                        <input id="numberOfOrders" class="form-control" name="Number-of-Oders" type="number" min="1" max="10" required><br>
                         </select><br>
-                 </div>  
+                </div>  
+                <div class="check-out">
+                    <button class="btn btn-primary" type="submit" value="Check-Out">Check-Out</button>
+                </div>
+            </form>
             </div>
             </div>
 
