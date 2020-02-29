@@ -47,4 +47,74 @@ $(document).ready(function() {
             price: 250
         }
     ]
+    $("#orderPizza").submit(function(event) {
+        event.preventDefault();
 
+        pizzaSize = $("#pizzaSize").val();
+        crustOption = $("#crustOption").val();
+        toppingsOption = $("#toppings").val();
+        extraToppings = $("#extraToppings").val();
+
+
+        numberOfOrder = $("#numberOfOrders").val();
+
+
+        let pizzaSizePrice = 0;
+        let crustOptionPrice = 0;
+        let toppingsOptionPrice = 0;
+        let extraToppingsPrice = 0;
+        //to use these variables later
+
+
+
+        //find out which size was selected
+
+        $.each(pizzaSizeArray, function(key, value) {
+            if (value.name == pizzaSize) {
+                console.log(value.name + value.price);
+                pizzaSizePrice = value.price;
+                return pizzaSizePrice
+            }
+        });
+
+
+        //find out which crust was selected
+        console.log(pizzaSizePrice)
+        $.each(crustOptionArray, function(key, value) {
+            if (value.name == crustOption) {
+                console.log(value.name + value.price);
+                crustOptionPrice = value.price;
+                return crustOptionPrice
+            }
+        });
+
+
+        //find out which topping was selected
+        $.each(toppingsOptionArray, function(key, value) {
+            if (value.name == toppingsOption) {
+                console.log(value.name + value.price);
+                toppingsOptionPrice = value.price;
+                return toppingsOptionPrice
+            }
+        });
+
+
+        console.log(extraToppings)
+        if (extraToppings == "Familiar") {
+            extraToppingsPrice = 0;
+            console.log(extraToppingsPrice);
+        } else {
+            if (extraToppings == "Surprise Me" && pizzaSize == "Extra Large") {
+                extraToppingsPrice = 250;
+                console.log(extraToppingsPrice);
+            } else if (extraToppings == "Surprise Me" && pizzaSize == "Large") {
+                extraToppingsPrice = 200;
+                console.log(extraToppingsPrice);
+            } else if (extraToppings == "Surprise Me" && pizzaSize == "Medium") {
+                extraToppingsPrice = 150;
+                console.log(extraToppingsPrice);
+            } else if (extraToppings == "Surprise Me" && pizzaSize == "Small") {
+                extraToppingsPrice = 100;
+                console.log("extraToppings ", extraToppingsPrice)
+            }
+        }
