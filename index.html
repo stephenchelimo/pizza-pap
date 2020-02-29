@@ -85,7 +85,7 @@
                 </select><br>
 
                     <label for="Toppings">Toppings</label>
-                <select id="toppings" class="form-control" required>
+                <select id="toppings" class="formControl" required>
                   <option value="">Select Toppings</option>
                   <option value="BBQ-Chicken">BBQ-Chicken, 300/-</option>
                   <option value="Meat Deluxe">Meat Deluxe, 200/-</option>
@@ -110,6 +110,33 @@
             </form>
             </div>
             </div>
+
+            <div class="col-lg-3">
+                <div class="delivery">
+                    <div class="receipt">
+                        <h6>Receipt</h6>
+                        <div id="sizeAndPrice"> </div>
+                        <div id="crustAndPrice"> </div>
+                        <div id="toppingsAndPrice"> </div>
+                        <div id="extraToppingsAndPrice"> </div>
+                        <div id="subTotal"> </div>
+                        <div id="orderNumber"> </div>
+                        <div id="grandTotal"> </div>
+                    </div>
+                    <div class="pizzaDeliveryForm">
+                        <form id="deliveryPointForm">
+                            <label for="Delivery-Point">Select Delivery Point</label>
+                            <select id="deliveryPoint" class="form-control" required>
+                          <option value="">Select Delivery Point</option>
+                          <option value="1">Deliver my-home</option>
+
+                          <option value="2">Pick up from pizza-pap</option>
+                          </select>
+                            <div class="confirm">
+                                <button class="btn btn-primary" type="submit" value="Confirm">Confirm</button>
+                            </div>
+                        </form>
+
 
 </body>
 </html>
