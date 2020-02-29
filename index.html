@@ -67,8 +67,45 @@
             </div>
             <div class="order-form col-lg-5">
                 <form id="order-Pizza">
-           </div>
-           </div>
+                  
+                    <label for="Pizza-Sizes">Pizza Size</label>
+                    <select id="pizzaSize" class="form-control" required>
+                  <option value="">Select Size</option>
+                  <option value="Extra Large">Extra Large, 900/-</option> <!-- consider adding an image to these opitons -->
+                  <option value="Large">Large, 700/-</option>
+                  <option value="Medium">Medium, 500/-</option>
+                  <option value="Small">Small, 300/-</option>
+                </select><br>
+
+                    <label for="Crusts">Crust-Options</label>
+                    <select id="crustOption" class="form-control" required>
+                  <option value="">Select Crust</option>
+                  <option value="Double-Delight">Double-Delight,300</option>
+                  <option value="Regular">Regular, free</option>
+                </select><br>
+
+                    <label for="Toppings">Toppings</label>
+                    <select id="toppings" class="form-control" required>
+                  <option value="">Select Toppings</option>
+                  <option value="BBQ-Chicken">BBQ-Chicken, 300/-</option>
+                  <option value="Meat Deluxe">Meat Deluxe, 200/-</option>
+                  <option value="Margherita">Margherita, 250/-</option>
+                </select><br>
+
+                    <label for="Extra Toppings">Extra Toppings</label>
+                    <select id="extraToppings" class="form-control" required>
+                  <option value="">Select Extra Toppings</option>
+                  <option value="Surprise Me">Surprise Me!-</option>
+                  <option value="Familiar">Familiar (no-extra-topping), free</option>
+                </select><br>
+
+                 <div>
+                    <label for="Number of Oders"> Number of Oders</label>
+                        <input id="numberOfOrders" class="form-control" name="Number-of-Oders" type="number" min="1" required><br>
+                        </select><br>
+                 </div>  
+            </div>
+            </div>
 
 </body>
 </html>
