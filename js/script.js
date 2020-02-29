@@ -118,3 +118,27 @@ $(document).ready(function() {
                 console.log("extraToppings ", extraToppingsPrice)
             }
         }
+
+
+        //total price calculation (size, crust, toppings, extraToppings)
+        const totalCostOfPizza = pizzaSizePrice + crustOptionPrice + toppingsOptionPrice + extraToppingsPrice;
+        console.log("total ", totalCostOfPizza);
+
+
+        //total with number of orders
+
+        const finalTotal = totalCostOfPizza * numberOfOrder;
+
+
+
+        console.log(finalTotal);
+
+        $("#sizeAndPrice").html("Size and Price: " + pizzaSizePrice);
+        $("#crustAndPrice").html("Crust and Price: " + crustOptionPrice);
+        $("#toppingsAndPrice").html("Toppings and Price: " + toppingsOptionPrice);
+        $("#extraToppingsAndPrice").html("Extra Toppings and Price: " + extraToppingsPrice);
+        $("#subTotal").html("Subtotal Cost: " + totalCostOfPizza);
+        $("#orderNumber").html("Number of Order(s): " + numberOfOrder);
+        $("#grandTotal").html("Grand Total Cost: " + finalTotal);
+
+    });
