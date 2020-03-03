@@ -2,10 +2,10 @@ body{
     background-color: khaki;
 }
 
-.landingpage{
-    background-color: indigo);
+.landing-page{
+    background-color: indigo;
     background-size: cover;
-    height: 600px
+    height: 600px;
     
 
 }
@@ -26,8 +26,8 @@ menu{
 .two{
     margin-top: 30px;
 }
-.
-}
+
+
 .aboutus{
 padding: 100px;
 }
