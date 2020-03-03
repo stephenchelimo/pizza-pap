@@ -9,16 +9,16 @@ stephen chelimo
  this a pizza booking website a user can book and be delivered or pick from the cafe
 
 ## livepage
-https://stephenchelimo.github.io/week-3-project--delani-studio/
+https://github.com/stephenchelimo/pizza-pap.git
 
 ## Setup instruction
  
 
     Open Terminal {Ctrl+Alt+T}
 
-    git clone https://github.com/stephenchelimo/Delani-Studio.git
+    git clone https://github.com/stephenchelimo/pizza-pap.git
 
-    cd Delani-Studio
+    cd week-4-projects
 
     code . or atom . depending on the text editor of your choise.
 
