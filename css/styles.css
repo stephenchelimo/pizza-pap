@@ -62,7 +62,7 @@ body {
 }
 
 .order-n-summary {
-    background-image: linear-gradient( rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)), url(../images/dom-pizzy-client.jpg);
+    background-image:  url(../pics/chef-2.jpeg/);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 15vh;
@@ -86,6 +86,7 @@ body {
 .order-form {
     display: inline-block;
     text-align: center;
+    color: green;
 }
 
 select {
@@ -120,7 +121,7 @@ button[type="submit"] {
 }
 
 .receipt {
-    background: #f5f5f0;
+    background: #f7f7e2;
     line-height: 1.5em;
     text-align: center;
 }
@@ -138,7 +139,7 @@ button[type="submit"] {
 }
 
 .share-feedback {
-    background-image: linear-gradient( rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)), url(../images/dom-pizzy-pizza2.jpg);
+    background-image: linear-gradient( rgb(255, 255, 255, 0.8), rgb(255, 255, 255, 0.8)), url(../pics/delivery.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -177,8 +178,8 @@ textarea {
 }
 
 .footer {
-    width: 100vw;
-    height: 10vh;
+    width: 10px;
+    height: 10px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -207,4 +208,8 @@ textarea {
         width: 100%;
         display: block;
     }
+}
+
+i {
+    font-size: 200px;
 }

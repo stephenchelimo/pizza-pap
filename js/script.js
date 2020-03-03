@@ -1,11 +1,4 @@
 $(document).ready(function() {
-    // $(".content1").hover(function() {
-    //     $(".contant1").toggle("slow");
-    //     $(".content2").toggle("5000ms");
-    // });
-
-
-
     const pizzaSizeArray = [{
             name: "Extra Large",
             price: 900
@@ -54,10 +47,7 @@ $(document).ready(function() {
         crustOption = $("#crustOption").val();
         toppingsOption = $("#toppings").val();
         extraToppings = $("#extraToppings").val();
-
-
         numberOfOrder = $("#numberOfOrders").val();
-
 
         let pizzaSizePrice = 0;
         let crustOptionPrice = 0;
@@ -152,13 +142,13 @@ $(document).ready(function() {
         };
 
     });
-    $("#submitLocaton").submit(function(event) {
+ $("#submitLocaton").submit(function(event) {
         event.preventDefault();
         var remoteClientName = $("#userName").val();
         var remoteClientAddress = $("#userAddress").val();
         var remoteClientPhoneNumber = $("#userTelNum").val();
 
-        $("#remoteThankYou").html("Thankyou " + remoteClientName + " for odering with us! Your order will be delivered to your location, " + remoteClientAddress + ".");
+        alert("#remoteThankYou").html("Thankyou " + remoteClientName + " for odering with us! Your order will be delivered to your location, " + remoteClientAddress + ".");
 
     });
 
