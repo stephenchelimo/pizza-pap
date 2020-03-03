@@ -1,176 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link href= 'https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' /> 
-    <title>pizza-pap</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Hammersmith+One|Radley|Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
-    <div>
-
-        <nav class="navbar">
-
-            <div class="logo">
-                <img class="logo-pic" src="pics/pizza-8.jpeg" alt="pizza-8"> 
-            </div>
-
-            <div class="navlist">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Welcome Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#order">Make Your Order Today! </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#clientFeedback">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    
-        <div class="welcome">
-            <div id="content-img" class="content1">
-                <img src="pics/pizza-4.jpeg" class="img-fluid content-img1 mx-auto" alt="pizza-4">
-                <div>
-                    <h5 id="img-content-text1">Welcome to Pizza-Pap <br> The 5-star pizza cafe we satisfy you needs.</h5>
-                </div>
-            </div>
-
-            <div class="row order-list">
-             <div class="col-lg-9 display center">
-               <div class="col-lg-4" id="order">
-                  <h2>Happy to have you! make your order.</h2>
-               </div>
-             </div>
-            </div>
-
-            <div class="row order-report">
-             <div class="order-form col-lg-5">
-                <img src="pics/pizza-8.jpeg" class="img-fluid content-img2 mx-auto" alt="pizza">
-              <form id="order-Pizza">    
-                 <label for="Pizza-Sizes">Pizza Size</label>
-                    <select id="pizzaSize" class="form-control" required>
-                  <option value="">Select Size</option>
-                  <option value="Extra Large">Extra Large, 900/-</option> 
-                  <option value="Large">Large, 700/-</option>
-                  <option value="Medium">Medium, 500/-</option>
-                  <option value="Small">Small, 300/-</option>
-                </select><br>
-
-                    <label for="Crusts">Crust-Options</label>
-                    <select id="crustOption" class="form-control" required>
-                  <option value="">Select Crust</option>
-                  <option value="Double-Delight">Double-Delight,300</option>
-                  <option value="Regular">Regular, free</option>
-                </select><br>
-
-                    <label for="Toppings">Toppings</label>
-                <select id="toppings" class="formControl" required>
-                  <option value="">Select Toppings</option>
-                  <option value="BBQ-Chicken">BBQ-Chicken, 300/-</option>
-                  <option value="Meat Deluxe">Meat Deluxe, 200/-</option>
-                  <option value="Margherita">Margherita, 250/-</option>
-                </select><br>
-
-                <label for="Extra Toppings">Extra Toppings</label>
-                <select id="extraToppings" class="form-control" required>
-                  <option value="">Select Extra Toppings</option>
-                  <option value="Surprise Me">Surprise Me!-</option>
-                  <option value="Familiar">Familiar (no-extra-topping), free</option>
-                </select><br>
-
-                <div>
-                    <label for="Number of Oders"> Number of Oders</label>
-                        <input id="numberOfOrders" class="form-control" name="Number-of-Oders" type="number" min="1" max="10" required><br>
-                        </select><br>
-                </div>  
-                <div class="check-out">
-                    <button class="btn btn-primary" type="submit" value="Check-Out">Check-Out</button>
-                </div>
-            </form>
-            </div>
-            </div>
-
-            <div class="col-lg-3">
-                <div class="delivery">
-                    <div class="receipt">
-                        <h1>Receipt</h1>
-                        <div id="sizeAndPrice"> </div>
-                        <div id="crustAndPrice"> </div>
-                        <div id="toppingsAndPrice"> </div>
-                        <div id="extraToppingsAndPrice"> </div>
-                        <div id="subTotal"> </div>
-                        <div id="orderNumber"> </div>
-                        <div id="grandTotal"> </div>
-                    </div>
-
-                    <div class="pizzaDeliveryForm">
-                     <form id="deliveryPointForm">
-                            <label for="Delivery-Point">Select Delivery Point</label>
-                            <select id="deliveryPoint" class="form-control" required>
-                          <option value="">Select Delivery Point</option>
-                          <option value="1">Deliver to my-home</option>
-
-                          <option value="2">Pick up from pizza-pap</option>
-                          </select>
-                            <div class="confirm">
-                                <button class="btn btn-primary" type="submit" value="Confirm">Confirm</button>
-                            </div>
-                    </form>
-                        <div id="remoteLocation">
-                            <form id="submitLocaton">
-                                <input id="userName" class="form-control" type="text" name="name" placeholder="Name" required><br>
-                                <input id="userAddress" class="form-control" type="text" name="address" placeholder="Enter Your Location Address" required><br>
-                                <input id="userTelNum" class="form-control" type="number" name="phone-number" placeholder="07..." required><br>
-                                <button class="btn btn-primary" type="submit" value="submit">Submit</button>
-                            </form>
-                        </div>
-                        <div id="remoteThankYou"></div>
-                     </div>
-                </div>
-             </div> 
-            
-             <div id="Feedback" class="row share-feedback">
-                 <div class="col-lg-8 indent">
-                     <div class="card bg-transparent">
-                         <h3>Client Feedback Form</h3>
-                        <form id="feedback-form">
-                            <label for="name">Name: </label>
-                            <input name="name" type="text" placeholder="Name"><br>
-                            <label for="Email">Email:</label>
-                            <input name="email" type="email" placeholder="Email"><br>
-                            <label for="feedback">Tell us how you were served, and what we shall do to make our services better.</label><br>
-                            <textarea name="message" placeholder="Make your feedback here" required></textarea>
-                            <button type="submit" form="form1" value="Submit">Submit</button>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-sm-9 indent displayCenter">
-                <div class="card socialIcons">
+    <div class="main container">
+        <div class="landingpage">
+            <p class="pizza-pap text-white text-bold text-center">pizza-pap</p>
+            <img class="card-img-top one" src="pics/pizza-4.jpeg">
+        </div>
+        <div class="menu">
+            <h3 class="menu text-center">Here is our delicious menu</h3>
+            <div class="row">
+                <div class="col-md-6 mt-4">
                     <div>
-                     <h3>contact us:</h3>
-                        <i class="fa fa-facebook-f"></i>                 
-                        <i class="fa fa-twitter-square"></i>
-                        <i class="fa fa-instagram"></i>                       
+                        <img class="card-img-top one" src="pics/pizza-7.jpeg">
+                    </div>
+                    <div class="overlay1">
+                        <h5 class="text-bold">Pizza  Extravaganza</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <div>
+                        <img class="card-img-top" src="pics/pizza-6.jpeg">
+                    </div>
+                    <div class="overlay">
+                        <h5 class="text-bold">Pizza with Cheese</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mt-4">
+                    <div>
+                        <img class="card-img-top" src="pics/pizza-3.jpeg">
+                    </div>
+                    <div class="overlay">
+                        <h5 class="text-bold">Pizza Mexican Green Wave</h5>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <div>
+                        <img class="card-img-top" src="pics/delivery.jpeg">
+                    </div>
+                    
+                        <h5> class="text-bold">Pizza Margherita extra</h5>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer">
-            Thanks our beloved customer and Welcome again
+        <div class="order row">
+            <div class="col-md-6">
+                <h3>place your order Here </h3>
+                <form action="" id="pizzainfo">
+                    <label for="">Choose your pizza size</label>
+                    <select class="form-control" name="size" id="size">
+                        <option value="1200">Large @ ksh 1200</option>
+                        <option value="900">Medium @ ksh 900</option>
+                        <option value="600">Small @ ksh 600</option>
+                    </select>
+                    <label for="">Choose your desired crust type</label>
+                    <select class="form-control" name="" id="crust">
+                        <option value="230" name="crust">stuffed crust @ ksh230
+                        <option value="250" name="crust">Crispy @ ksh 250
+                        <option value="300" name="crust">Glutten free @ ksh 300
+                    </select>
+                    <label for="">Choose your Desired toppings</label> <br>
+                    <input value="150" type="checkbox" id="toppingone">Mushrooms
+                    <input value="150" type="checkbox" id="toppingone">Sausage
+                    <input value="150" type="checkbox" id="toppingone">Onions
+                    <input value="150" type="checkbox" id="toppingone">Tikka Sauce
+                    <input value="150" type="checkbox" id="toppingone">Mozarella Cheese
+
+                    <label for="">Input Quantity</label>
+                    <input class="form-control form-group" type="text" id="numberofpizza">
+                    <button name="button" type="submit" id="submit" value="Check-Out"
+                        onclick="calcTotalPrice()">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <div id="formlocation">
+                    <h3>For delivery services,enter your location details below</h3>
+                    <form id="delivery">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" name="" id="name" required="required">
+                        <label for="location">Location</label>
+                        <input class="form-control" type="text" id="location" placeholder="resident">
+                        <label for="phonenumber">Phone Number</label>
+                        <input class="form-control" type="tel" placeholder="phone" id="number"> <br>
+                        <button type="submit" name="button" id="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer row">
+            <div class="col-md-6 Get in touch">
+                <h4>contact us</h4>
+                <p><i class="fa fa-map-marker fa-2x">&nbsp;pizza pap estate</i></p>
+                <p><i class="fa fa-phone">&nbsp;0712345678</i></p>
+                <p><i class="fa fa-email">&nbsp;info@Pizza-pap.com</i></p>
+            </div>
+            <div class="col-md-6 social icons">
+                <div id="contacts" class="small-divs">
+                    <h4></h4>
+                    <p>Contact us </p>
+                    <p><i class="fa fa-facebook-square">&nbsp;Pizza-pap></pizza-pap></i></p>
+                    <p><i class="fa fa-instagram">&nbsp;Pizza-pap</i></p>
+                    <p><i class="fa fa-youtube ">&nbsp;Pizza-pap</i></p>
+                    <p><i class="fa fa-twitter ">&nbsp;Pizza-pap</i></p>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
 </body>
+
 </html>
